@@ -1,0 +1,20 @@
+背景
+
+1.background-color:背景色
+
+2.backgrount-image:背景图
+
+3.background-repeat:背景重复
+    repeat-x:横向平铺
+    repeat-y:纵向平铺
+    no-repeat:不平铺
+
+4.background-position:背景图像所在的位置。 top、bottom、left、right 和 center。
+    通常这些关键字会成对出现。
+    用这个的时候也需要声明no-repeat。background-repeat:no-repeat;
+    也可以用百分比，background-position:66% 33%
+
+5.background-attachment:背景关联。fixed，scroll
+    如果文档比较长，那么当文档向下滚动时，背景图像也会随之滚动。当文档滚动到超过图像的位置时，图像就会消失。
+    background-attachment 属性的默认值是 scroll，也就是说，在默认的情况下，背景会随文档滚动。
+    声明图像相对于可视区是固定的（fixed），就不会受到滚动的影响。

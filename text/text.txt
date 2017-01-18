@@ -1,0 +1,49 @@
+文本
+
+1.text-indent:第一行缩进一个给定长度。
+    适用于块元素，无法应用于行元素。
+    如果想把一个行内元素的第一行“缩进”，可以用左内边距或外边距创造这种效果。
+    设置负值，实现悬挂缩进。
+    可以使用百分比，代表缩进的宽度是父元素宽度的百分比。
+    属性可以被继承。父元素使用了该属性，子元素也会有相应的效果。
+
+2.text-align:一个元素中的文本的对齐方式。left、right、center。
+    justify	实现两端对齐文本效果。
+    inherit	规定应该从父元素继承 text-align 属性的值。
+    text-align:center 与 <CENTER> 。<CENTER> 不仅影响文本，还会把整个元素居中。text-align 不会控制元素的对齐，而只影响内部文本内容。
+
+3.word-spacing:字（单词）之间的标准间隔。其默认值 normal 与设置值为 0 是一样的。
+    注意，是单词，不是字符！
+
+4.letter-spacing:字符或字母之间的间隔。
+
+5.text-transform:字符转换。
+    none，uppercase，lowercase，capitalize。
+    capitalize 只对每个单词的首字母大写。
+
+6.text-decoration:文本装饰。
+    none，underline，overline，line-through，blink
+    underline	下划线。
+    overline	上划线。
+    line-through	定义穿过文本下的一条线。
+    blink	定义闪烁的文本。
+    none	默认。会关闭原本应用到一个元素上的所有装饰。也可以去掉超链接的默认下划线。
+
+7.white-space:处理空白符。默认值normal
+    设置为normal，换行字符（回车）会转换为空格，一行中多个空格的序列也会转换为一个空格。
+    pre	空白和回车会被浏览器保留。其行为方式类似 HTML 中的 <pre> 标签。
+    nowrap	文本不会换行，文本会在在同一行上继续，直到遇到 <br> 标签为止。
+    pre-wrap	保留空白符序列，但是正常地进行换行。
+    pre-line	合并空白符序列，但是保留换行符。
+
+8.direction:文本方向。指定块元素内容的书写方向
+    ltr	默认。文本方向从左到右。
+    rtl	文本方向从右到左。
+
+9.line-height:行高，行间距。默认值normal
+    normal	默认。设置合理的行间距。
+    number	设置数字，此数字会与当前的字体尺寸相乘来设置行间距。
+    length	设置固定的行间距。
+    %	基于当前字体尺寸的百分比行间距。
+    inherit	规定应该从父元素继承 line-height 属性的值。
+
