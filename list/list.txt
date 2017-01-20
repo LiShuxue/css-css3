@@ -1,0 +1,26 @@
+列表
+
+1.list-style-type:修改列表项的标志类型(列表项前面的小黑点或者数字)。默认是disc，实心圆
+    none	无标记。
+    disc	默认。标记是实心圆。
+    circle	标记是空心圆。
+    square	标记是实心方块。
+    decimal	标记是数字。
+    decimal-leading-zero	0开头的数字标记。(01, 02, 03, 等。)
+    lower-roman	小写罗马数字(i, ii, iii, iv, v, 等。)
+    upper-roman	大写罗马数字(I, II, III, IV, V, 等。)
+    lower-alpha	小写英文字母(a, b, c, d, e, 等。)
+    upper-alpha	大写英文字母(A, B, C, D, E, 等。)
+    。。。。
+
+2.list-style-image:用图像做标志。默认none, 无图形被显示。
+    URL	图像的路径。list-style-image: url("/i/arrow.gif");
+
+3.list-style-position: 标志项出现在列表项内容之外还是之内
+    outside：外部 ，标志会放在离列表项边框边界一定距离处，不过这距离在 CSS 中未定义。
+    inside： 内部 ，标志处理为好像它们是插入在列表项内容最前面的行内元素一样。
+
+4.list-style: 列表样式的简便属性
+    ul {list-style : url(example.gif) square inside}
+
+可以用在ul或者li上

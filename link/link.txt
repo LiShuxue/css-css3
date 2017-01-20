@@ -1,0 +1,12 @@
+链接
+
+1.链接的四种状态：
+    a: link， 普通的，未被访问的链接
+    a: visited， 用户已访问的链接
+    a: hover， 鼠标位于链接的上方
+    a: active， 链接被点击的时刻
+
+    a:link {color:#FF0000;}		/* 未被访问的链接 */
+    a:visited {color:#00FF00;}	/* 已被访问的链接 */
+    a:hover {color:#FF00FF;}	/* 鼠标指针移动到链接上 */
+    a:active {color:#0000FF;}	/* 正在被点击的链接 */
