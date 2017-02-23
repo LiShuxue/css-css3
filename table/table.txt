@@ -1,0 +1,24 @@
+表格
+
+
+表格默认具有双线条边框。这是由于 table、th 以及 td 元素都有独立的边框。
+
+1. th: 带有预定义宽度的单元格，<th width="60%">Address</th>
+
+2. border-collapse: 折叠边框。默认值为separate，边框分开
+    collapse：边框折叠合并为单一的框。会忽略 border-spacing 和 empty-cells 属性。
+
+3. text-align， vertical-align ：水平对齐和垂直对齐。
+    垂直对齐需要设置高度
+
+4.border-spacing ：设置相邻单元格的边框间的距离（仅用于“边框分离”模式）。
+
+5.caption-side ：设置表格标题的位置。
+    默认top,位于表格上。 bottom，位于表格下
+
+6.empty-cells : 隐藏表格中空单元格上的边框和背景.
+    默认是show，显示边框。还可以是hide，不绘制边框。
+
+7.table-layout：用来显示表格单元格、行、列的算法规则。
+    auto	默认。列宽度由单元格内容设定。
+    fixed	列宽由表格宽度和列宽度设定。
