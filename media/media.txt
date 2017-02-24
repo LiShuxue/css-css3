@@ -1,0 +1,24 @@
+@media规则
+
+@media 规则使你有能力在相同的样式表中，使用不同的样式规则来针对不同的媒介。
+下面这个例子中的样式告知浏览器在显示器上显示 14 像素的 Verdana 字体。
+但是假如页面需要被打印，将使用 10 个像素的 Times 字体。
+注意：font-weight 被设置为粗体，不论显示器还是纸媒介
+
+显示器时生效
+    @media screen
+    {
+    p.test {font-family:verdana,sans-serif; font-size:14px}
+    }
+
+打印时生效
+    @media print
+    {
+    p.test {font-family:times,serif; font-size:10px}
+    }
+
+显示器或打印时都生效
+    @media screen,print
+    {
+    p.test {font-weight:bold}
+    }
