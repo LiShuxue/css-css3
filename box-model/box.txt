@@ -1,0 +1,45 @@
+框模型（盒模型）
+
+1.从内到外：
+    实际内容（元素）： width height
+    内边距：padding
+    边框： border
+    外边距： margin  
+    
+2.外边距默认是透明的，因此不会遮挡其后的任何元素。
+
+3.背景应用于边框及以内的区域
+
+4.padding：可以单独写，里面写多个值。也可以单独写，如padding-left
+
+5.border :
+    border-style：边框样式，可以里面写4个，也可以单独写。
+    border-width：边框宽度
+    border-color：边框颜色
+
+6.margin：外边距
+    外边距合并：当两个垂直外边距相遇时，他们将形成一个外边距。
+    合并后的外边距的高度等于两个发生合并的外边距的高度中的较大者。
+    上面div margin-bottom:20px
+    下面div margin-top:10px
+    合并后上面margin-bottom：20px.下面的div将没有margin。
+
+7.display:规定元素应该生成的框的类型.
+    inline	默认。此元素会被显示为内联元素，元素前后没有换行符。适用于操作块元素
+    block	此元素将显示为块级元素，此元素前后会带有换行符。适用于操作行元素
+    inline-block	行内块元素。（CSS2.1 新增的值）
+    none	此元素不会被显示。
+    list-item	此元素会作为列表显示。
+    run-in	此元素会根据上下文作为块级元素或内联元素显示。
+    compact	CSS 中有值 compact，不过由于缺乏广泛支持，已经从 CSS2.1 中删除。
+    marker	CSS 中有值 marker，不过由于缺乏广泛支持，已经从 CSS2.1 中删除。
+    table	此元素会作为块级表格来显示（类似 <table>），表格前后带有换行符。
+    inline-table	此元素会作为内联表格来显示（类似 <table>），表格前后没有换行符。
+    table-row-group	此元素会作为一个或多个行的分组来显示（类似 <tbody>）。
+    table-header-group	此元素会作为一个或多个行的分组来显示（类似 <thead>）。
+    table-footer-group	此元素会作为一个或多个行的分组来显示（类似 <tfoot>）。
+    table-row	此元素会作为一个表格行显示（类似 <tr>）。
+    table-column-group	此元素会作为一个或多个列的分组来显示（类似 <colgroup>）。
+    table-column	此元素会作为一个单元格列显示（类似 <col>）
+    table-cell	此元素会作为一个表格单元格显示（类似 <td> 和 <th>）
+    table-caption	此元素会作为一个表格标题显示（类似 <caption>）
