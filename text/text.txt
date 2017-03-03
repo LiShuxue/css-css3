@@ -47,3 +47,19 @@
     %	基于当前字体尺寸的百分比行间距。
     inherit	规定应该从父元素继承 line-height 属性的值。
 
+
+CSS3文本效果：
+    text-shadow: 文本阴影
+        您能够规定水平阴影、垂直阴影、模糊距离，以及阴影的颜色。
+        text-shadow: h-shadow v-shadow blur color;
+
+    text-overflow: 属性规定当文本溢出包含元素时发生的事情。
+        text-overflow: clip|ellipsis|string;
+        clip	修剪文本。
+        ellipsis	显示省略符号来代表被修剪的文本。
+        string	使用给定的字符串来代表被修剪的文本。
+
+    word-wrap 属性允许长单词或 URL 地址换行到下一行。
+        word-wrap: normal|break-word;
+        normal	只在允许的断字点换行（浏览器保持默认处理）。
+        break-word	在长单词或 URL 地址内部进行换行。

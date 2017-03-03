@@ -33,3 +33,57 @@
     larger	把 font-size 设置为比父元素更大的尺寸。
     length	把 font-size 设置为一个固定的值。默认大小是 16 像素 (16px=1em)。推荐用em
     %	把 font-size 设置为基于父元素的一个百分比值。
+
+
+CSS3字体：
+    CSS3 @font-face 规则
+        在 CSS3 之前，web 设计师必须使用已在用户计算机上安装好的字体。
+        通过 CSS3，web 设计师可以使用他们喜欢的任意字体。
+        Firefox、Chrome、Safari 以及 Opera 支持 .ttf (True Type Fonts) 和 .otf (OpenType Fonts) 类型的字体。
+
+        <style> 
+            @font-face  /*先声明字体文件*/
+            {
+            font-family: myFirstFont;
+            src: url('Sansation_Light.ttf'),
+                url('Sansation_Light.eot'); /* IE9+ */
+            }
+
+            div    /*再在HTML元素上使用*/
+            {
+            font-family:myFirstFont;
+            }
+        </style>
+
+        下面列出了能够在 @font-face 规则中定义的所有字体描述符：
+            font-family	        name	        必需。规定字体的名称。
+
+            src	                URL	            必需。定义字体文件的 URL。
+
+            font-stretch	    normal          可选。定义如何拉伸字体。默认是 "normal"。
+                                condensed
+                                ultra-condensed
+                                extra-condensed
+                                semi-condensed
+                                expanded
+                                semi-expanded
+                                extra-expanded
+                                ultra-expanded
+
+            font-style	        ormal           可选。定义字体的样式。默认是 "normal"。
+                                italic
+                                oblique
+
+            font-weight	        normal          可选。定义字体的粗细。默认是 "normal"。
+                                bold
+                                100
+                                200
+                                300
+                                400
+                                500
+                                600
+                                700
+                                800
+                                900
+
+            unicode-range	    unicode-range	可选。定义字体支持的 UNICODE 字符范围。默认是 "U+0-10FFFF"。

@@ -43,3 +43,25 @@
     table-column	此元素会作为一个单元格列显示（类似 <col>）
     table-cell	此元素会作为一个表格单元格显示（类似 <td> 和 <th>）
     table-caption	此元素会作为一个表格标题显示（类似 <caption>）
+
+
+CSS3边框:
+    border-radius: 边框圆角。
+        单独属性：border-top-left-radius:20px;
+    
+    border-image: 边框图片。
+        border-image-source	用在边框的图片的路径。	
+        border-image-slice	图片边框向内偏移。	
+        border-image-width	图片边框的宽度。	
+        border-image-outset	边框图像区域超出边框的量。	
+        border-image-repeat	图像边框是否应平铺(repeated)、铺满(rounded)或拉伸(stretched)。
+    
+    box-shadow: 方框阴影。
+        box-shadow: h-shadow v-shadow blur spread color inset;
+        h-shadow	必需。水平阴影的位置。允许负值。
+        v-shadow	必需。垂直阴影的位置。允许负值。
+        blur	可选。模糊距离。
+        spread	可选。阴影的尺寸。
+        color	可选。阴影的颜色。请参阅 CSS 颜色值。
+        inset	可选。将外部阴影 (outset) 改为内部阴影。
+        box-shadow:20px 20px 20px #aaaaaa;

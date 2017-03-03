@@ -18,3 +18,18 @@
     如果文档比较长，那么当文档向下滚动时，背景图像也会随之滚动。当文档滚动到超过图像的位置时，图像就会消失。
     background-attachment 属性的默认值是 scroll，也就是说，在默认的情况下，背景会随文档滚动。
     声明图像相对于可视区是固定的（fixed），就不会受到滚动的影响。
+
+CSS3背景：
+    background-size：背景图片的尺寸。
+        在 CSS3 之前，背景图片的尺寸是由图片的实际尺寸决定的。在 CSS3 中，可以规定背景图片的尺寸，这就允许我们在不同的环境中重复使用背景图片。
+    
+    background-origin: 规定背景图片的定位区域。
+        背景图片可以放置于 content-box、padding-box 或 border-box 区域。
+        padding-box	背景图像相对于内边距框来定位。
+        border-box	背景图像相对于边框盒来定位。
+        content-box	背景图像相对于内容框来定位。
+    
+    background-clip：规定背景的绘制区域。
+        border-box	背景被裁剪到边框盒。
+        padding-box	背景被裁剪到内边距框。
+        content-box	背景被裁剪到内容框。
