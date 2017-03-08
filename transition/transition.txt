@@ -1,0 +1,29 @@
+CSS3过渡 transition
+
+    CSS3过渡是元素从一种样式逐渐改变为另一种的效果。
+    要实现这一点，必须规定两项内容：
+        规定您希望把效果添加到哪个 CSS 属性上，如height，width
+        规定效果的时长
+
+    如果时长未规定，则不会有过渡效果，因为默认值是 0。
+
+   
+
+    1. transition	简写属性，用于在一个属性中设置四个过渡属性。
+        transition: width 2s ease;
+
+    2. transition-property	规定应用过渡的 CSS 属性的名称。
+        none	没有属性会获得过渡效果。
+        all	所有属性都将获得过渡效果。
+        property	定义应用过渡效果的 CSS 属性名称列表，列表以逗号分隔。
+
+    3. transition-duration	定义过渡效果花费的时间（以秒或毫秒计）。默认是 0。
+
+    4. transition-timing-function	规定过渡效果的时间曲线。默认是 "ease"。
+        linear	规定以相同速度开始至结束的过渡效果（等于 cubic-bezier(0,0,1,1)）。
+        ease	规定慢速开始，然后变快，然后慢速结束的过渡效果（cubic-bezier(0.25,0.1,0.25,1)）。
+        ease-in	规定以慢速开始的过渡效果（等于 cubic-bezier(0.42,0,1,1)）。
+        ease-out	规定以慢速结束的过渡效果（等于 cubic-bezier(0,0,0.58,1)）。
+        ease-in-out	规定以慢速开始和结束的过渡效果（等于 cubic-bezier(0.42,0,0.58,1)）
+
+    5. transition-delay	规定过渡效果何时开始(以秒或毫秒计)。默认是 0。
