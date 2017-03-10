@@ -22,3 +22,18 @@
     {
     p.test {font-weight:bold}
     }
+
+
+CSS3 @media查询
+
+@media screen and (max-width: 767px) {    (适用于<=767的设备)
+    .test{
+        color: red;
+    }
+}
+
+@media screen and (min-width: 768px) {    (适用于>=768的设备)
+    .test{
+        color: yellow;
+    }
+}
